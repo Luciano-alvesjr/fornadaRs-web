@@ -1,8 +1,6 @@
 package com.fornada.fornadars.Produto;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-
-public class ProdutoRepository {
+public interface ProdutoRepository extends JpaRepository<ProdutoEntity, Long> {
 }

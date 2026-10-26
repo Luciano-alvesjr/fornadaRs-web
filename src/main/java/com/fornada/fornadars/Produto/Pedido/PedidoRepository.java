@@ -1,6 +1,6 @@
 package com.fornada.fornadars.Produto.Pedido;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 
-
-public class PedidoRepository {
+public interface PedidoRepository extends JpaRepository<PedidoEntity, Long> {
 }
