@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#45271d">
+<meta name="description" content="Cucas, pães e tortas frias da Fornada RS. Monte sua encomenda e combine os detalhes pelo Instagram. São Leopoldo e região.">
+<title>Fornada RS — Da nossa cozinha para sua mesa</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/PHOTO-2026-10-28-22-04-51_8.jpg">
+<link rel="stylesheet" href="styles.css"><script src="catalog.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#cardapio">Ir ao cardápio</a>
+<div class="topline">PRODUÇÃO SOB ENCOMENDA <span>•</span> SÃO LEOPOLDO E REGIÃO</div>
+<header class="header">
+<a class="brand" href="#" aria-label="Fornada, início"><span class="brand-mark" aria-hidden="true">❧</span><span>FORNADA<small>DA NOSSA COZINHA PARA SUA MESA</small></span></a>
+<nav aria-label="Navegação principal"><a href="#cardapio">Cardápio</a><a href="#cozinha">Nossa cozinha</a><a href="#como-pedir">Como pedir</a></nav>
+<button class="bag-button" id="open-cart" aria-haspopup="dialog"><svg width="20" height="22" viewBox="0 0 24 26" fill="none" aria-hidden="true"><path d="M3 8h18l1 16H2L3 8Z M8 10V6a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.6"/></svg><span class="bag-label">Sua sacola</span><span id="cart-count" class="count">0</span></button>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-copy"><p class="eyebrow"><span></span> FEITO À MÃO. FEITO COM TEMPO.</p>
+<h1 id="hero-title">O carinho de casa,<br>em cada <em>fornada.</em></h1>
+<p class="hero-description">Farofinha crocante, massa macia e aquele recheio generoso. Sabores que convidam a fazer uma pausa e dividir a mesa.</p>
+<a href="#cardapio" class="button primary">Escolher meus sabores <span aria-hidden="true">↗</span></a>
+<div class="hero-note"><span class="line-icon" aria-hidden="true">✧</span><p>Da nossa cozinha para sua mesa.<br><strong>Preparado sob encomenda, para você.</strong></p></div>
+</div>
+<div class="hero-art" id="hero-art">
+<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+<div class="hero-photo" id="hero-photo"><img id="hero-image" src="assets/PHOTO-2026-10-28-22-04-51_8.jpg" alt="Cuca pronta com farofa dourada e recheio de chocolate" width="1100" height="1300" fetchpriority="high"></div>
+<div class="round-stamp" aria-hidden="true"><span>FEITO À MÃO</span><b>F</b><span>COM CARINHO</span></div>
+<div class="floating-note"><span aria-hidden="true">✦</span><div><small>O MELHOR MOMENTO?</small><strong>A primeira fatia.</strong></div></div>
+<div class="hero-switch" role="group" aria-label="Veja as etapas da cuca"><button class="active" data-stage="pronta" aria-pressed="true">Prontinha</button><button data-stage="preparo" aria-pressed="false">Na cozinha</button></div>
+<span class="art-caption">UMA RECEITA, MUITOS BONS MOMENTOS.</span>
+</div>
+</section>
+<div class="ribbon" aria-hidden="true"><span>CUCAS RECHEADAS</span><i>✦</i><span>PÃES ARTESANAIS</span><i>✦</i><span>TORTA FRIA</span><i>✦</i><span>FEITO PARA COMPARTILHAR</span></div>
+<section id="cardapio" class="catalog section-wrap" aria-labelledby="catalog-title">
+<div class="section-heading"><div><p class="eyebrow">ESCOLHA SEU PRÓXIMO FAVORITO</p><h2 id="catalog-title">O que vai à sua mesa?</h2></div><p>Do café da manhã ao encontro de domingo.<br>Tem sempre um sabor para o seu momento.</p></div>
+<div class="catalog-toolbar"><div class="tabs" role="group" aria-label="Filtrar categoria"><button class="active" data-filter="todos" aria-pressed="true">Todos os sabores <span id="all-count">21</span></button><button data-filter="cucas" aria-pressed="false">Cucas</button><button data-filter="paes" aria-pressed="false">Pães</button><button data-filter="tortas" aria-pressed="false">Torta fria</button></div><label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="1.5"/></svg><span class="sr-only">Buscar sabor</span><input id="search" type="search" placeholder="Encontre seu sabor" maxlength="120"></label></div>
+<div class="catalog-status" id="catalog-status" role="status">Buscando o cardápio…</div>
+<div class="product-grid" id="product-grid" aria-live="polite"></div>
+<div class="catalog-footer"><span>✧ Algumas imagens são ilustrativas, geradas por IA. A aparência pode variar conforme o sabor.</span><span>Produção sob encomenda · Disponibilidade confirmada no Direct</span></div>
+<button id="retry-catalog" class="button outline" hidden>Tentar carregar novamente</button>
+</section>
+<section id="cozinha" class="story section-wrap" aria-labelledby="story-title">
+<div class="story-images"><img class="story-main" src="assets/PHOTO-2026-10-28-22-04-51_14.jpg" alt="Pães e cucas da Fornada sobre uma mesa de madeira" loading="lazy" width="900" height="1000"><div class="story-label">TEM CHEIRO DE FORNO.<br><em>Tem gosto de encontro.</em></div><img class="story-detail" src="assets/PHOTO-2026-10-28-22-04-51_10.jpg" alt="Encomendas da Fornada em embalagens de papel kraft" loading="lazy" width="500" height="600"></div>
+<div class="story-copy"><p class="eyebrow">NOSSA COZINHA</p><h2>O simples,<br>feito com <em>capricho.</em></h2><p>Uma cuca no café. Um pão dividido ainda na mesa. Uma encomenda para reunir quem a gente gosta.</p><p>Na Fornada, os detalhes fazem parte da receita: o recheio, a farofa, o preparo e o cuidado para chegar até você. Pães, cucas e tortas frias feitos sob encomenda, em São Leopoldo e região.</p><a class="text-link" href="https://www.instagram.com/fornada.rs/" target="_blank" rel="noopener noreferrer">Um pouco da nossa rotina no Instagram <span>↗</span></a></div>
+</section>
+<section id="como-pedir" class="how section-wrap" aria-labelledby="how-title"><div class="section-heading"><div><p class="eyebrow">DO SEU JEITO, SEM COMPLICAÇÃO</p><h2 id="how-title">Sua próxima fornada começa aqui.</h2></div></div><div class="steps"><article><span>01</span><h3>Escolha os sabores</h3><p>Explore o cardápio e adicione seus favoritos à sacola. Ajuste as quantidades como preferir.</p></article><article><span>02</span><h3>Monte sua encomenda</h3><p>Revise os itens e as quantidades. O pagamento por Pix será combinado no Direct.</p></article><article><span>03</span><h3>Combine no Direct</h3><p>Copie o resumo e envie no Instagram. Confirmamos disponibilidade, pagamento e detalhes de entrega ou retirada.</p></article></div></section>
+<section class="instagram section-wrap" aria-labelledby="instagram-title"><div class="instagram-copy"><p class="eyebrow">SAINDO DO FORNO, DIRETO PARA O FEED</p><h2 id="instagram-title">Acompanhe<br><em>@fornada.rs</em></h2><p>Mais sabores, bastidores e aquela vontade de pedir uma fatia.</p><a class="button outline" href="https://www.instagram.com/fornada.rs/" target="_blank" rel="noopener noreferrer">Visitar nosso Instagram ↗</a></div><div class="photo-strip"><img src="assets/PHOTO-2026-10-28-22-04-51_3.jpg" alt="Cucas prontas para uma nova fornada" loading="lazy" width="500" height="650"><img src="assets/PHOTO-2026-10-28-22-04-51_4.jpg" alt="Etapa de preparo das cucas salgadas" loading="lazy" width="500" height="650"><img src="assets/PHOTO-2026-10-28-22-04-51_11.jpg" alt="Pães dourados recém-assados" loading="lazy" width="500" height="650"></div></section>
+</main>
+<footer class="footer"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">❧</span><span>FORNADA<small>DA NOSSA COZINHA PARA SUA MESA</small></span></a><p>Qualidade e muito sabor.<br>São Leopoldo e região · Produção sob encomenda</p><a href="https://www.instagram.com/fornada.rs/" target="_blank" rel="noopener noreferrer">Fale com a gente ↗</a><div class="footer-bottom"><span>© <span id="year"></span> Fornada RS</span><span>Feito para bons encontros à mesa.</span></div></footer>
+<button id="mobile-cart" class="mobile-cart" hidden><span>Sua sacola · <b id="mobile-count">0</b> itens</span><strong id="mobile-total">R$ 0,00</strong><span>→</span></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-shell"><header class="cart-head"><div><p class="eyebrow">SUA PRÓXIMA FORNADA</p><h2 id="cart-title">Sua sacola</h2></div><button id="close-cart" class="icon-button" aria-label="Fechar sacola">×</button></header><div class="cart-scroll"><div id="cart-items"></div><div id="checkout-fields"><label>Como podemos chamar você? <span>(opcional)</span><input id="customer-name" autocomplete="given-name" maxlength="80" placeholder="Seu nome"></label><fieldset><legend>Forma de pagamento</legend><div class="payment-options"><label><input type="radio" name="payment" value="Pix" checked> Pix</label></div></fieldset><label>Algum detalhe para combinar? <span>(opcional)</span><textarea id="order-notes" maxlength="500" rows="3" placeholder="Data desejada, entrega ou retirada…"></textarea></label><p class="checkout-note">Pagamento, prazo e entrega serão combinados no Direct. Nenhuma cobrança é feita neste site.</p></div><section id="order-ready" hidden aria-labelledby="ready-title"><p class="eyebrow">RESUMO PREPARADO</p><h3 id="ready-title">Agora é só combinar.</h3><p>Seu pedido ainda precisa ser confirmado pela Fornada. Copie o resumo abaixo, abra o Direct e cole na conversa.</p><label class="sr-only" for="order-message">Resumo para enviar no Instagram</label><textarea id="order-message" readonly rows="10"></textarea><button id="copy-order" class="button outline">Copiar resumo</button><a class="button primary" id="direct-link" href="https://ig.me/m/fornada.rs" target="_blank" rel="noopener noreferrer">Abrir Direct do Fornada ↗</a><a class="text-link profile-fallback" href="https://www.instagram.com/fornada.rs/" target="_blank" rel="noopener noreferrer">Não abriu? Acesse o perfil e toque em Mensagem ↗</a><button id="new-order" class="text-link">Começar outra encomenda</button></section><p id="cart-error" class="error-message" role="alert" hidden></p></div><footer class="cart-bottom"><div class="total-row"><span>Total dos produtos</span><strong id="cart-total">R$ 0,00</strong></div><small>Entrega, se houver, combinada à parte.</small><button id="prepare-order" class="button primary">Preparar pedido para o Direct <span>↗</span></button></footer></div></dialog>
+<noscript><p class="noscript">Ative o JavaScript para montar a sacola. Você também pode encomendar pelo Instagram @fornada.rs.</p></noscript>
+</body></html>
